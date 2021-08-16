@@ -96,110 +96,111 @@
   </div>
   </div>
 
-  <!-- <div class="collapse" id="collapseExample">
-   <div class="container">
-    <div class="tab-content no-gutters" id="myTabContent">
-
-      <ul class="nav nav-tabs mt-5" id="myTabs" role="tablist">
-        <li class="nav-item" role="presentation">
-          <a class="nav-link nav-link-txt active" id="team-tab" data-toggle="tab" href="#team" role="tab"
-            aria-controls="team" aria-selected="true">Team</a>
+  <div class="collapse fade my-5" id="collapseExample">
+    <div class="container">
+      <ul class="nav nav-tabs" id="myTab">
+        <li class="nav-item">
+          <a class="nav-link active" data-toggle="tab" href="#team">Team</a>
         </li>
-        <li class="nav-item" role="presentation">
-          <a class="nav-link nav-link-txt" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
-            aria-controls="profile" aria-selected="false">Top goals</a>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#goals">Top Goals</a>
         </li>
       </ul>
-      <div class="tab-pane d-md-flex justify-content-md-between fade active show" id="team" role="tabpanel"
-        aria-labelledby="team-tab">
 
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="team" role="tabpanel" aria-labelledby="home-tab">
+           <div class="table__info row">
+            <div class="col-12 col-sm-6">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th class="font-weight-normal" scope="col">Name</th>
+                    <th class="font-weight-normal" scope="col">Age</th>
+                    <th class="font-weight-normal" scope="col">Nickname</th>
+                    <th class="font-weight-normal" scope="col">Employee</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th class="font-weight-normal" scope="row">Sadio Mane</th>
+                    <td>28</td>
+                    <td>Mane</td>
+                    <td>
+                      <input type="radio" name="radio">
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="font-weight-normal" scope="row">Roberto Firmino</th>
+                    <td>27</td>
+                    <td>Firmino</td>
+                    <td>
+                      <input type="checkbox" name="chekbox">
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="font-weight-normal" scope="row">Alisson Becker</th>
+                    <td>25</td>
+                    <td>Alisson</td>
+                    <td>
+                      <input type="checkbox" name="chekbox" disabled>
+                    </td>
+                  </tr>
 
-        <table class="table col-md-6 leciester-table">
-          <thead>
-            <tr>
-              <th class="p-0 p-sm-2" scope="col">Name</th>
-              <th class="p-0 p-sm-2" scope="col">Age</th>
-              <th class="p-0 p-sm-2" scope="col">Nickname</th>
-              <th class="p-0 p-sm-2" scope="col">Inployee</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th class="p-0 p-sm-2" scope="row">M.Salah</th>
-              <td class="p-0 p-sm-2">29</td>
-              <td class="p-0 p-sm-2">mosalah</td>
-              <td class="p-0 p-sm-2">
-                <input type="radio" checked disabled>
-              </td>
-            </tr>
-            <tr>
-              <th class="p-0 p-sm-2" scope="row">K.Ibrahima</th>
-              <td class="p-0 p-sm-2">22</td>
-              <td class="p-0 p-sm-2">ibrahimakonate</td>
-              <td class="p-0 p-sm-2">
-                <input type="checkbox" checked disabled>
-              </td>
-            </tr>
-            <tr>
-              <th class="p-0 p-sm-2" scope="row">B.Alisson</th>
-              <td class="p-0 p-sm-2">28</td>
-              <td class="p-0 p-sm-2">alissonbecker</td>
-              <td class="p-0 p-sm-2">
-                <input type="checkbox" disabled>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+                </tbody>
+              </table>
+            </div>
 
-        <table class="table col-md-6 liverpool-table">
-          <thead>
-            <tr>
-              <th class="p-0 p-sm-2" scope="col">Name</th>
-              <th class="p-0 p-sm-2" scope="col">Age</th>
-              <th class="p-0 p-sm-2" scope="col">Nickname</th>
-              <th class="p-0 p-sm-2" scope="col">Inployee</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th class="p-0 p-sm-2" scope="row">Y.Tilemans</th>
-              <td class="p-0 p-sm-2">24</td>
-              <td class="p-0 p-sm-2">
-                youritielemans</td>
-              <td class="p-0 p-sm-2">
-                <input type="radio" disabled>
-              </td>
-            </tr>
-            <tr>
-              <th class="p-0 p-sm-2" scope="row">B.Sumare</th>
-              <td class="p-0 p-sm-2">22</td>
-              <td class="p-0 p-sm-2">bubakarisumareh</td>
-              <td class="p-0 p-sm-2">
-                <input type="checkbox" checked disabled>
-              </td>
-            </tr>
-            <tr>
-              <th class="p-0 p-sm-2" scope="row">B.Alisson</th>
-              <td class="p-0 p-sm-2">28</td>
-              <td class="p-0 p-sm-2">alissonbecker</td>
-              <td class="p-0 p-sm-2">
-                <input type="checkbox" disabled>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="col-12 col-sm-6">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th class="font-weight-normal" scope="col">Name</th>
+                    <th class="font-weight-normal" scope="col">Age</th>
+                    <th class="font-weight-normal" scope="col">Nickname</th>
+                    <th class="font-weight-normal" scope="col">Employee</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th class="font-weight-normal" scope="row">M.Salah</th>
+                    <td>29</td>
+                    <td>Salah</td>
+                    <td>
+                      <input type="radio" name="radio">
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="font-weight-normal" scope="row">Virgil Van Djik</th>
+                    <td>30</td>
+                    <td>Van Djik</td>
+                    <td>
+                      <input type="checkbox" name="chekbox">
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="font-weight-normal" scope="row">Trent Alexander Arnold</th>
+                    <td>23</td>
+                    <td>Arnold</td>
+                    <td>
+                      <input type="checkbox" name="chekbox" disabled>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+           </div>
+          </div>
 
-        <iframe class="top-goals" src="https://www.youtube.com/embed/IUWl9bhLr0E" title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen style="border: none;"></iframe>
-
-      </div>
+          <div class="tab-pane fade" id="goals" role="tabpanel" aria-labelledby="home-tab">
+            <div class="py-4 border-bottom">
+              <h3>Goals Command Liverpool</h3>
+            <a class="mr-4" href="https://www.youtube.com/watch?v=REbuqkMjC5k">Full video</a>
+            <iframe width="900" height="506" src="https://www.youtube.com/embed/REbuqkMjC5k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
     </div>
-   </div>
-  </div> -->
-
+  </div>
 
 </main>
 
