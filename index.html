@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>76</title>
+</head>
+<body class="d-flex flex-column h-100">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="./img/site-logo.jpg" alt="Site Logo" width="200" height="50">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sitenav-collapse" aria-controls="sitenav-collapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="sitenav-collapse">
+      <ul class="navbar-list list-unstyled ml-auto d-flex align-items-center mb-0">
+        <li class="navbar-item mr-3">
+          <a class="navbar-link text-dark" href="#">Home</a>
+        </li>
+        <li class="navbar-item mr-3">
+          <a class="navbar-link text-dark" href="#">Championship</a>
+        </li>
+        <li class="navbar-item mr-3">
+          <a class="navbar-link text-dark" href="#">News</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link text-dark" href="#">Blog</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main class="site-main">
+  <div class="container">
+      <h1 class="font-weight-bold text-center mt-5">Today's match</h1>
+
+
+  <div class="site-main__wrapper d-flex align-items-center justify-content-between mt-5">
+    <div class="col-4 d-flex flex-column align-items-center">
+      <img class="justify-content-center" src="./img/liverpool.ico" alt="Logo Liverpool" width="250" height="250">
+      <h2 class="text-center text-primary mb-0 mt-2">Liverpool</h2>
+      <div class="w-100 d-flex align-items-center justify-content-between mt-3">
+        <dt class="text-primary">Wins:</dt>
+        <dd class="text-info mb-0">13</dd>
+      </div>
+      <div class="w-100 d-flex align-items-center justify-content-between mt-3">
+        <dt class="text-primary">Loses:</dt>
+        <dd class="text-info mb-0">3</dd>
+      </div>
+      <div class="w-100 d-flex align-items-center justify-content-between mt-3">
+        <dt class="text-primary">Draws:</dt>
+        <dd class="text-info mb-0">6</dd>
+      </div>
+      <div class="w-100 d-flex align-items-center justify-content-between mt-3">
+        <dt class="text-primary">Leaderboard position:</dt>
+        <dd class="text-info mb-0">4</dd>
+      </div>
+    </div>
+
+    <div class="site-main__buttons d-flex flex-column align-items-center">
+      <button class="btn btn-primary mb-2" type="button" data-target="#modal-promo" data-toggle="modal">Watch match promo</button>
+      <button class="btn btn-primary mb-2" type="button">Buy tickets</button>
+      <button class="btn btn-primary mb-2" type="button">Buy merch</button>
+      <a class="btn bg-primary text-light" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">More info</a>
+    </div>
+
+
+    <div class="col-4 d-flex flex-column align-items-center">
+      <img class="justify-content-center" src="./img/leicester.png" alt="Logo Leicester city" width="250" height="250">
+      <h2 class="text-center text-primary mb-0 mt-2">Leicester</h2>
+      <div class="w-100 d-flex align-items-center justify-content-between mt-3">
+        <dt class="text-primary">Wins:</dt>
+        <dd class="text-info mb-0">14</dd>
+      </div>
+      <div class="w-100 d-flex align-items-center justify-content-between mt-3">
+        <dt class="text-primary">Loses:</dt>
+        <dd class="text-info mb-0">3</dd>
+      </div>
+      <div class="w-100 d-flex align-items-center justify-content-between mt-3">
+        <dt class="text-primary">Draws:</dt>
+        <dd class="text-info mb-0">6</dd>
+      </div>
+      <div class="w-100 d-flex align-items-center justify-content-between mt-3">
+        <dt class="text-primary">Leaderboard position:</dt>
+        <dd class="text-info mb-0">4</dd>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- <div class="collapse" id="collapseExample">
+   <div class="container">
+    <div class="tab-content no-gutters" id="myTabContent">
+
+      <ul class="nav nav-tabs mt-5" id="myTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a class="nav-link nav-link-txt active" id="team-tab" data-toggle="tab" href="#team" role="tab"
+            aria-controls="team" aria-selected="true">Team</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link nav-link-txt" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+            aria-controls="profile" aria-selected="false">Top goals</a>
+        </li>
+      </ul>
+      <div class="tab-pane d-md-flex justify-content-md-between fade active show" id="team" role="tabpanel"
+        aria-labelledby="team-tab">
+
+
+        <table class="table col-md-6 leciester-table">
+          <thead>
+            <tr>
+              <th class="p-0 p-sm-2" scope="col">Name</th>
+              <th class="p-0 p-sm-2" scope="col">Age</th>
+              <th class="p-0 p-sm-2" scope="col">Nickname</th>
+              <th class="p-0 p-sm-2" scope="col">Inployee</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="p-0 p-sm-2" scope="row">M.Salah</th>
+              <td class="p-0 p-sm-2">29</td>
+              <td class="p-0 p-sm-2">mosalah</td>
+              <td class="p-0 p-sm-2">
+                <input type="radio" checked disabled>
+              </td>
+            </tr>
+            <tr>
+              <th class="p-0 p-sm-2" scope="row">K.Ibrahima</th>
+              <td class="p-0 p-sm-2">22</td>
+              <td class="p-0 p-sm-2">ibrahimakonate</td>
+              <td class="p-0 p-sm-2">
+                <input type="checkbox" checked disabled>
+              </td>
+            </tr>
+            <tr>
+              <th class="p-0 p-sm-2" scope="row">B.Alisson</th>
+              <td class="p-0 p-sm-2">28</td>
+              <td class="p-0 p-sm-2">alissonbecker</td>
+              <td class="p-0 p-sm-2">
+                <input type="checkbox" disabled>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table class="table col-md-6 liverpool-table">
+          <thead>
+            <tr>
+              <th class="p-0 p-sm-2" scope="col">Name</th>
+              <th class="p-0 p-sm-2" scope="col">Age</th>
+              <th class="p-0 p-sm-2" scope="col">Nickname</th>
+              <th class="p-0 p-sm-2" scope="col">Inployee</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="p-0 p-sm-2" scope="row">Y.Tilemans</th>
+              <td class="p-0 p-sm-2">24</td>
+              <td class="p-0 p-sm-2">
+                youritielemans</td>
+              <td class="p-0 p-sm-2">
+                <input type="radio" disabled>
+              </td>
+            </tr>
+            <tr>
+              <th class="p-0 p-sm-2" scope="row">B.Sumare</th>
+              <td class="p-0 p-sm-2">22</td>
+              <td class="p-0 p-sm-2">bubakarisumareh</td>
+              <td class="p-0 p-sm-2">
+                <input type="checkbox" checked disabled>
+              </td>
+            </tr>
+            <tr>
+              <th class="p-0 p-sm-2" scope="row">B.Alisson</th>
+              <td class="p-0 p-sm-2">28</td>
+              <td class="p-0 p-sm-2">alissonbecker</td>
+              <td class="p-0 p-sm-2">
+                <input type="checkbox" disabled>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+        <iframe class="top-goals" src="https://www.youtube.com/embed/IUWl9bhLr0E" title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen style="border: none;"></iframe>
+
+      </div>
+    </div>
+   </div>
+  </div> -->
+
+
+</main>
+
+
+<div class="modal fade show mt-5" id="modal-promo">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <iframe width="465" height="300" src="https://www.youtube.com/embed/TQjqT17gO9A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="./js/jquery-3.6.0.min.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
